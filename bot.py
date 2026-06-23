@@ -8,7 +8,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 BOT_TOKEN = "8938350975:AAHBNcMOGITyVBlS_iI0bOGATCgk8C-VOv4"
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 
 def init_db():
     conn = sqlite3.connect('tasks.db')
